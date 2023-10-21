@@ -15,7 +15,7 @@ import io.github.suuzanemoura.labpadroesprojetospring.model.Client;
 import io.github.suuzanemoura.labpadroesprojetospring.service.ClientService;
 
 @RestController
-@RequestMapping("clientes")
+@RequestMapping("clients")
 public class ClientRestController {
 
     @Autowired
