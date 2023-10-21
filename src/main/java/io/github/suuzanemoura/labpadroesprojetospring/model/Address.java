@@ -1,17 +1,17 @@
 package io.github.suuzanemoura.labpadroesprojetospring.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Address {
 
     @Id
     private String cep;
-    private String street;
-    private String complement;
-    private String neighborhood;
-    private String city;
+    private String logradouro;
+    private String complemento;
+    private String bairro;
+    private String localidade;
     private String uf;
     private String ibge;
     private String gia;
@@ -26,36 +26,36 @@ public class Address {
         this.cep = cep;
     }
 
-    public String getStreet() {
-        return street;
+    public String getLogradouro() {
+        return logradouro;
     }
 
-    public void setStreet(String street) {
-        this.street = street;
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
-    public String getComplement() {
-        return complement;
+    public String getComplemento() {
+        return complemento;
     }
 
-    public void setComplement(String complement) {
-        this.complement = complement;
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
-    public String getNeighborhood() {
-        return neighborhood;
+    public String getBairro() {
+        return bairro;
     }
 
-    public void setNeighborhood(String neighborhood) {
-        this.neighborhood = neighborhood;
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
-    public String getCity() {
-        return city;
+    public String getLocalidade() {
+        return localidade;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setLocalidade(String localidade) {
+        this.localidade = localidade;
     }
 
     public String getUf() {

@@ -10,5 +10,5 @@ import io.github.suuzanemoura.labpadroesprojetospring.model.Address;
 public interface CepService {
 
     @GetMapping("/{cep}/json/")
-    Address findCep(@PathVariable("cep") String cep);
+    Address searchCep(@PathVariable("cep") String cep);
 }

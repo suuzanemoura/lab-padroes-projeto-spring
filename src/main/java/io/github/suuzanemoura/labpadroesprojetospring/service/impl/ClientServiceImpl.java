@@ -58,7 +58,7 @@ public class ClientServiceImpl implements ClientService {
         String cep = client.getAddress().getCep();
         Address address = addressRepository.findById(cep).orElseGet(() -> {
 
-            Address newAddress = cepService.findCep(cep);
+            Address newAddress = cepService.searchCep(cep);
             addressRepository.save(newAddress);
             return newAddress;
 
